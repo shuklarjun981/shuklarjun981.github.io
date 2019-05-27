@@ -1,0 +1,161 @@
+<html>
+    <head>
+    <title>Daily Calorie Goal</title>
+<link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+<h1> BE FIT BE HEALTHY</H1>
+  <h2>set daily requirement of calories.<h2>
+
+<script type="text/javascript" language="javascript">
+
+
+    function Calculate() {
+
+        var gender = document.getElementById("gender").value;
+        var weight = document.getElementById("weight").value;
+        var height = document.getElementById("height").value;
+        var age = document.getElementById("age").value;
+        var goal = document.getElementById("goal").value;
+
+        if(gender=="male")
+            {
+                val1 = 6.23 * weight;
+                val2 = 12.7 * height;
+                val3 = 6.8 * age;
+                dailyDeficit = (goal * 3500) / 90;
+
+                result = 66 + val1 + val2 - val3;
+
+                cals = result * 1.55;
+                calMax = cals - dailyDeficit;
+
+            }
+        else if (gender=="female")
+            {
+                val1 = 6.23 * weight;
+                val2 = 4.7 * height;
+                val3 = 4.7 * age;
+                dailyDeficit = (goal * 3500) / 90;
+
+                result = 655 + val1 + val2 - val3;
+
+                cals = result * 1.55;
+                calMax = cals - dailyDeficit;
+            }
+
+
+
+      window.alert('This is your Daily Calorie Goal. To achieve your goal, just consume fewer than this number of calories every day:     ' + calMax.toFixed(2) + 'calories');
+
+    }
+
+
+    </script>
+
+
+    <form action="#">
+        Gender  : <select id="gender"><option value="male">Male</option><option value="female">Female</option></select><br />
+        Weight (lbs.)   : <input type="text" id="weight" /><br />
+        Height (inches): <input type="text" id="height" /><br />
+        Age     : <input type="text" id="age" /><br />
+        Goal    : <select id="goal"><option value=5>Lose 5 Pounds</option><option value=10>Lose 10 Pounds</option><option value=15>Lose 15 Pounds</option><option value=20>Lose 20 Pounds</option><option value=25>Lose 25 Pounds</option></select><br />
+
+
+        </fieldset>
+        <input type="button" value="Get My Daily Calorie Goal"
+
+onclick="Calculate()" />
+    </form>
+
+    <table style="width:100%">
+    <tr>
+    <th>Foods(quantity)</th>     <th>Carbohydrates(g)</th>   <th>Proteins(g)</th>
+      </tr>
+    <tr>
+    <th>White Flour(2 tbs)</th>    <th>11.9</th>    <th>1.6</th>  </tr>
+    <tr>
+    <th>Ghee(1 tsp)</th>     <th>0</th>   <th>0</th>
+      </tr>
+    <tr>
+    <th>Sugar, white(1 tsp)</th>     <th>4.2</th>   <th>0</th>
+      </tr>
+    <tr>
+    <th>Biscuit(60 gm)</th>     <th>27.6</th>   <th>4.2</th>
+      </tr>
+    <tr>
+    <th>White bread(1 piece)</th>     <th>14.9</th>   <th>2.5</th>
+      </tr>
+    <tr>
+    <th>Black Beans(0.5 cup)</th>     <th>20.4</th>   <th>7.6</th>
+      </tr>
+    <tr>
+    <th>Soyabeans(0.5 cup)</th>     <th>9.9</th>   <th>11.1</th>
+      </tr>
+    <tr>
+    <th>Corn Flakes(1 cup)</th>     <th>24.2</th>   <th>1.8</th>
+      </tr>
+    <tr>
+    <th>Cream cheese(2 tbs)</th>     <th>0.8</th>   <th>2.2</th>
+      </tr>
+    <tr>
+    <th>Mozarella(2 tbs)</th>     <th>0.3</th>   <th>2.7</th>
+      </tr>
+    <tr>
+    <th>Garlic(1 each)</th>     <th>1</th>   <th>0.2</th>
+      </tr>
+    <tr>
+    <th>Ginger(1 tbs)</th>     <th>0.9</th>   <th>0.1</th>
+      </tr>
+    <tr>
+    <th>Honey(1 tsp)</th>     <th>5.8</th>   <th>0</th>
+      </tr>
+    <tr>
+    <th>Ketchup(1 tbs)</th>     <th>4.2</th>   <th>0.2</th>
+      </tr>
+    <tr>
+    <th>Butter(1 tsp)</th>     <th>0</th>   <th>0</th>
+      </tr>
+    <tr>
+    <th>Milk(1 cup)</th>     <th>11.4</th>   <th>8</th>
+      </tr>
+    <tr>
+    <th>Yoghurt(1 cup)</th>     <th>11.4</th>   <th>8.5</th>
+      </tr>
+    <tr>
+    <th>Cake (30 gm)</th>     <th>13.8</th>   <th>1.6</th>
+      </tr>
+    <tr>
+    <th>Chocolate Dark(30 gm)</th>     <th>18</th>   <th>1.3</th>
+      </tr>
+    <tr>
+    <th>Doughnut (1 each)</th>     <th>19</th>   <th>3</th>
+      </tr>
+    <tr>
+    <th>Ice cream(0.5 cup)</th>     <th>18.6</th>   <th>2.3</th>
+      </tr>
+    <tr>
+    <th>Egg white (1 each)</th>     <th>0.3</th>   <th>3.5</th>
+      </tr>
+    <tr>
+    <th>Mango (0.25 cup)</th>     <th>7</th>   <th>0.2</th>
+      </tr>
+    <tr>
+    <th>Rice, white (0.5 cup)</th>     <th>22.3</th>   <th>2.1</th>
+      </tr>
+    <tr>
+    <th>Chicken leg (1 each)</th>     <th>0</th>   <th>29.7</th>
+      </tr>
+    <tr>
+    <th>Peanut Butter (2 tbs)</th>     <th>6.2</th>   <th>8.1</th>
+      </tr>
+    <tr>
+    <th>Noodles (0.5 cup)</th>     <th>19.9</th>   <th>3.8</th>
+      </tr>
+    <tr>
+    <th>Spinach (1 cup)</th>     <th>1.1</th>   <th>0.9</th>
+      </tr
+
+</body>
+
+    </html>
