@@ -1,0 +1,48 @@
+body{background:url('https://www.wallpaperup.com/uploads/wallpapers/2015/01/10/581761/56b6b816cf3a37e400bf2316456bfae4-700.jpg');
+background-position: left-center;
+background-repeat: no-repeat;
+background-size: cover;}
+h1{text-align: center;
+font-family:fantasy;
+background-color: black;
+color: red;}
+span:hover + div{display: block;}
+div{background-color:inherit;
+  border: 2px;
+  border-color: red;
+  border-radius: 15px;
+  color: white;
+padding:50px;
+display: none;}
+h1:hover{background:url('https://image.winudf.com/v2/image/Y29tLlZpa2luZ3NXYWxscGFwZXJzLkd5bTIzX3NjcmVlbnNob3RzXzNfMzk1ODMzMzk/screen-3.jpg?h=800&fakeurl=1&type=.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+font-size: 200%;
+text-decoration: underline;
+font-style: oblique;}
+span{text-align: center;
+color:red;
+border: 3px;
+border-radius: 30 px;
+border-style: groove;
+}
+a:link{background-color:green;
+}a:visited{color:red;}
+a:hover {
+  background-color: purple;
+}
+table {border-style:double;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color:red;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
