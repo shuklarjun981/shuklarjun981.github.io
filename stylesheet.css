@@ -6,14 +6,6 @@ h1{text-align: center;
 font-family:fantasy;
 background-color: black;
 color: red;}
-span:hover + div{display: block;}
-div{background-color:inherit;
-  border: 2px;
-  border-color: red;
-  border-radius: 15px;
-  color: white;
-padding:50px;
-display: none;}
 h1:hover{background:url('https://image.winudf.com/v2/image/Y29tLlZpa2luZ3NXYWxscGFwZXJzLkd5bTIzX3NjcmVlbnNob3RzXzNfMzk1ODMzMzk/screen-3.jpg?h=800&fakeurl=1&type=.jpg');
 background-position: center;
 background-repeat: no-repeat;
@@ -22,14 +14,18 @@ text-align: center;
 font-size: 200%;
 text-decoration: underline;
 font-style: oblique;}
-span{text-align: center;
+p{text-align: center;
 color:red;
 border: 3px;
 border-radius: 30 px;
 border-style: groove;
 }
-a:link{background-color:green;
-}a:visited{color:red;}
+a:link
+{background-color:green;
+}
+a:visited{
+  color:red;
+}
 a:hover {
   background-color: purple;
 }
@@ -44,5 +40,3 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 tr:hover {background-color:red;}
-tr:nth-child(even) {background-color: #f2f2f2;}
-
